@@ -49,7 +49,7 @@ The project has been professionally modularized for maintainability:
 ├── 📄 index.html             # The main layout, sections, and structural content
 ├── 🎨 style.css              # All premium styling, animations, and responsive media queries
 ├── ⚙️ script.js              # Three.js logic, flip-book certificates, and interactivity
-└── 🖼️ (Assets)               # Cover images, profile pictures, and certificates
+└── 🖼️ assets/                # Cover images, profile pictures, and certificates
 ```
 
 ---
