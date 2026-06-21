@@ -12,7 +12,7 @@
 Welcome to my personal developer portfolio! This project is a completely bespoke, visually stunning web experience built to demonstrate my capabilities as a modern web developer. It features a custom 3D interactive particle background, smooth scrolling mechanics, premium frosted glassmorphism aesthetics, and meticulously designed responsive layouts.
 
 ### 🚀 Live Preview
-*(Add your live GitHub pages URL here once deployed, e.g., https://purvi-singhal.github.io/portfolio)*
+[https://purvi-singhal.github.io/portfolio](https://purvi-singhal.github.io/portfolio)
 
 ---
 
