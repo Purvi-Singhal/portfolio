@@ -230,7 +230,7 @@
         credId: '697b7adfd3ca09d0a4cf68c3',
         verifyUrl: 'https://www.theforage.com',
         verifyText: 'theforage.com',
-        img: 'assets/python-certificate.png'
+        img: 'assets/deloitte-certificate.png'
       },
       {
         title: 'Programming Fundamentals using Python',
