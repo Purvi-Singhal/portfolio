@@ -24,6 +24,7 @@ Welcome to my personal developer portfolio! This project is a completely bespoke
 - **Dynamic Projects Showcase:** A sleek, fully animated side-by-side featured project component inspired by high-end design trends.
 - **Authentic Tech Arsenal:** A modern grid displaying real brand logos of my technology stack.
 - **Custom Magnetic Cursor:** A custom-built cursor that smoothly snaps to interactive elements, enhancing user immersion.
+- **Functional Contact Form:** Fully integrated with EmailJS to send messages directly to your inbox with beautiful toast notifications.
 - **100% Responsive:** Flawlessly adapts from large 4K displays down to mobile devices without compromising design integrity.
 
 ---
@@ -37,6 +38,7 @@ This portfolio was built purely using core web technologies to maximize performa
 - **Logic & Interactions:** Vanilla JavaScript (ES6+)
 - **3D Graphics:** [Three.js](https://threejs.org/)
 - **Icons:** [FontAwesome](https://fontawesome.com/)
+- **External Services:** [EmailJS](https://www.emailjs.com/) for serverless form submissions.
 
 ---
 

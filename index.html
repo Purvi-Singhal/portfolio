@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   
   <link rel="stylesheet" href="style.css">
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 
 <body>
@@ -596,7 +598,7 @@
       </div>
 
       <div class="c-right">
-        <form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <form class="contact-form" id="contactForm">
           <input type="hidden" name="_subject" value="New message from Portfolio!">
           <div class="c-form-group">
             <label class="c-label">Name</label>
@@ -643,6 +645,16 @@
 
   <!-- PARTICLES -->
   <div id="particles" style="position:fixed;inset:0;pointer-events:none;z-index:0;"></div>
+
+  <!-- Toast notification for contact form -->
+  <div id="contactToast" class="contact-toast">
+    <div class="contact-toast-icon" id="contactToastIcon"><i class="fa-solid fa-check-circle"></i></div>
+    <div class="contact-toast-content">
+      <div class="contact-toast-title" id="contactToastTitle">Message Sent!</div>
+      <div class="contact-toast-desc" id="contactToastDesc">Thanks! I'll get back to you soon.</div>
+    </div>
+    <button class="contact-toast-close" id="contactToastClose"><i class="fa-solid fa-xmark"></i></button>
+  </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   <script src="script.js"></script>

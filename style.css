@@ -3417,3 +3417,133 @@
         .vid-image-wrapper { height: 250px; }
         .vid-content-footer { flex-direction: column; align-items: flex-start; padding: 1.5rem; }
       }
+
+/* ════════════════════════════════════════════
+   CONTACT TOAST NOTIFICATION
+════════════════════════════════════════════ */
+.contact-toast {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.4rem;
+  border-radius: 16px;
+  background: rgba(14, 14, 30, 0.92);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(167, 139, 250, 0.2);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.4),
+    0 0 0 1px rgba(167, 139, 250, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  z-index: 100000;
+  min-width: 320px;
+  max-width: 420px;
+  transform: translateX(calc(100% + 3rem));
+  opacity: 0;
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+              opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.contact-toast.show {
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.contact-toast-icon {
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+}
+
+.contact-toast.success .contact-toast-icon {
+  background: rgba(16, 185, 129, 0.15);
+  color: #10b981;
+  border: 1px solid rgba(16, 185, 129, 0.25);
+}
+
+.contact-toast.error .contact-toast-icon {
+  background: rgba(248, 113, 113, 0.15);
+  color: #f87171;
+  border: 1px solid rgba(248, 113, 113, 0.25);
+}
+
+.contact-toast.success {
+  border-color: rgba(16, 185, 129, 0.25);
+}
+
+.contact-toast.error {
+  border-color: rgba(248, 113, 113, 0.25);
+}
+
+.contact-toast-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.contact-toast-title {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--text);
+  margin-bottom: 0.15rem;
+}
+
+.contact-toast-desc {
+  font-size: 0.82rem;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.contact-toast-close {
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  color: var(--muted);
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.3rem;
+  border-radius: 8px;
+  transition: color 0.2s, background 0.2s;
+}
+
+.contact-toast-close:hover {
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+/* ═══ Contact Submit Button States ═══ */
+.c-submit.sending {
+  opacity: 0.7;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.c-submit.sent {
+  background: linear-gradient(135deg, #10b981, #059669) !important;
+  border-color: rgba(16, 185, 129, 0.4) !important;
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.25);
+}
+
+/* ═══ Toast Responsive ═══ */
+@media (max-width: 640px) {
+  .contact-toast {
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    min-width: 0;
+    max-width: none;
+    transform: translateY(calc(100% + 2rem));
+  }
+  .contact-toast.show {
+    transform: translateY(0);
+  }
+}
